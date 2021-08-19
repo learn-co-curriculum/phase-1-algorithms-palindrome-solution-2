@@ -24,6 +24,8 @@ As a reminder, here are the instructions:
 
 ## Solution 2
 
+<!-- TODO: Add video walkthrough -->
+
 ### 1. Rewrite the Problem in Your Own Words
 
 Just like before, we'll start by rewriting the problem in a different way to
