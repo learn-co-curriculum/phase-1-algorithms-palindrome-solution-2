@@ -20,7 +20,7 @@ As a reminder, here are the instructions:
 > return `false` if it is not a palindrome.
 >
 > To keep things simple, your function only needs to deal with lowercase strings
-> that are all one letters (don't worry about spaces or special characters).
+> that are all letters (don't worry about spaces or special characters).
 
 ## Solution 2
 
@@ -32,15 +32,16 @@ Just like before, we'll start by rewriting the problem in a different way to
 make sure we understand it:
 
 ```txt
-I need to make a isPalindrome function that returns either true or false. When
+I need to make an isPalindrome function that returns either true or false. When
 the input string is the same forwards and backwards, I should return true. That
 means if the first letter is the same as the last letter, and the second letter
 is the same as the second to last letter, and so on (until the middle of the
-word), the function should return true. For the word "racecar", the first and
-last letter is "r", the second and second to last is "a", the third and third to
-last is "c", and the middle is "e", so I should return true. For the word
-"robot", the first letter is "r" and the last letter is "t", so I should return
-false.
+word), the function should return true.
+
+For the word "racecar", the first and last letter is "r", the second and second
+to last is "a", the third and third to last is "c", and the middle is "e", so I
+should return true. For the word "robot", the first letter is "r" and the last
+letter is "t", so I should return false.
 ```
 
 Note that this description of the problem still highlights the inputs and
@@ -221,7 +222,7 @@ function isPalindrome(word) {
 
 Now if any letters **don't** match, we'll stop looping and exit the function
 early with a return value of `false`. Our last step is to return `true` once we
-react the end of the loop, since at that point we'll have compared all the
+reach the end of the loop, since at that point we'll have compared all the
 letters:
 
 ```js
@@ -287,10 +288,10 @@ Again, think about the worst case: how well would our algorithm handle very
 large input strings?
 
 In the example above, we create two new variables, `startIndex` and `endIndex`,
-both of which hold numbers; so we aren't adding too much space complexity
+both of which hold numbers, so we aren't adding too much space complexity
 (numbers are simpler to store in memory than strings and arrays).
 
-We are also only iterating over half of the length of the string at most, so our
+Since we are only iterating over half of the length of the string at most, our
 program's time complexity grows in proportion to the length of the input (for a
 10 letter string, we'll need 5 iterations; for a 1000 letter string, we'll need
 500 iterations).
@@ -362,7 +363,7 @@ algorithms and introduce the concept of Big O notation.
 ## Resources
 
 Here are a few solutions to this problem from external sources to see alternate
-approaches to this problem.
+approaches.
 
 > **Note**: Some of these examples involve handling more edge cases, like spaces
 > and uppercase characters, which may come up in technical interviews as well.
