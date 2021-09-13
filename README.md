@@ -24,6 +24,10 @@ As a reminder, here are the instructions:
 
 ## Solution 2
 
+### Video Walkthrough
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/X7OwxO7zuzU?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+
 <!-- TODO: Add video walkthrough -->
 
 ### 1. Rewrite the Problem in Your Own Words
@@ -89,9 +93,10 @@ if (require.main === module) {
 Our next step, once again, is to write some pseudocode based on our
 understanding of the problem. The key part of our description is:
 
-> If the first letter is the same as the last letter, and the second letter
-> is the same as the second to last letter, and so on (until the middle of the
-> word), the function should return true.
+> If the **first letter** is the same as the **last
+> letter**, and the **second letter** is the same as the **second to last**
+> letter, and so on (until the middle of the word), the function should return
+> `true`.
 
 Here's how we can translate that into a pseudocode version of our algorithm:
 
